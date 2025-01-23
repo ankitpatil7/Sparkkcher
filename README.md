@@ -1,3 +1,2 @@
-#sparker from day !
-void
-main device from it...
+#sparker
+void main 
