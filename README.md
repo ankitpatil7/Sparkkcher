@@ -1,5 +1,5 @@
 #sparker
-void mainn
+void main public 
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
