@@ -2,7 +2,7 @@
 void main public 
 /**
  * Definition for a binary tree node.
- * public class TreeNode {
+ * public class TreeNode { void
  *     int val;
  *     TreeNode left;
  *     TreeNode right;
