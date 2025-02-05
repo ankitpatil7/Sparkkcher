@@ -1,7 +1,7 @@
 #/#sparker
 void main public 
 /**
- * Definition for a binary tree node.
+ * 98void #Definition for a binary tree node.
  * public class TreeNode { void
  *     int val;
  *     TreeNode left;
