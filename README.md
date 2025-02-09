@@ -101,7 +101,7 @@ class Solution {
         return root;
     }
 }/**
- * Definition for a binary tree node.
+ * Definition for a binary tree node# class solution 
  * public class TreeNode {
  *     int val;
  *     TreeNode left;
