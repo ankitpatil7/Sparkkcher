@@ -1,3 +1,4 @@
+void main binary 
 class define
 re direct define class Solution {
     public String removeOccurrences(String s, String part) {
