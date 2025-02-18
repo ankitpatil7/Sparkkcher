@@ -1,4 +1,4 @@
-call fuct main void main binary 
+toggale call fuct main void main binary 
 class define
 re direct define class Solution {
     public String removeOccurrences(String s, String part) {
