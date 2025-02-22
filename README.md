@@ -1,4 +1,4 @@
-return the value of tringtoggale call fuct main void main binary from main string
+publc staticreturn the value of tringtoggale call fuct main void main binary from main string
 class define
 re direct define class Solution {
     public String removeOccurrences(String s, String part) {
