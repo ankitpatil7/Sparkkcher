@@ -1,3 +1,6 @@
+redirect static
+void class (
+solution)
 publc staticreturn the value of tringtoggale call fuct main void main binary from main string
 class define
 re direct define class Solution {
