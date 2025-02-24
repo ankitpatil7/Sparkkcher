@@ -1,3 +1,4 @@
+public value main
 redirect static
 void class (
 solution)
