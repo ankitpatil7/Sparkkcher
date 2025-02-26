@@ -1,4 +1,52 @@
 class Solution {
+    int n, m;
+    int[] dx = {-1, -1, 1, 1};
+    int[] dy = {-1, 1, 1, -1};
+    public int lenOfVDiagonal(int[][] grid) {
+        n = grid.length;
+        m = grid[0].length;
+        List<int[]> list = new ArrayList<>();
+
+        for (int i=0; i<n; i++){
+            for (int j=0; j<m; j++){
+                if (grid[i][j]==1){
+                    list.add(new int[]{i, j});
+                }
+            }
+        }
+        int size = list.size();
+        int max = 0;
+        for (int i=0; i<size; i++){
+            max = Math.max(max, getMaxV(list.get(i), grid));
+        }
+        return max;
+    }
+
+    public int getMaxV(int[] points, int[][] grid){
+        int max = 1;
+        
+        for (int i=0; i<4; i++){
+            int x = points[0]+dx[i];
+            int y = points[1]+dy[i];
+            if (x<0 || y<0 || x>=n || y>=m ) continue;
+            max = Math.max(max, dfs(x, y, 2, i, grid, false));
+        }
+        return max;
+    }
+
+    public int dfs(int x, int y,int next, int dir, int[][] grid, boolean turned){
+        if (x<0 || y< 0 || x>=n || y>=m || grid[x][y]!=next) return 1;
+        
+        int sameDirection = 1 + dfs(x+dx[dir], y+dy[dir],2-next, dir, grid, turned);
+        int changeDirection = 0;
+        if (!turned){
+            dir = (dir+1)%4;
+            changeDirection = 1 + dfs(x+dx[dir], y+dy[dir],2-next, dir, grid, true);
+        }
+        return Math.max(sameDirection, changeDirection);
+        
+    }
+}class Solution {
     public int numOfSubarrays(int[] arr) {
         int MOD = 1000000007;
         int odd = 0, even = 1; 
