@@ -1,4 +1,4 @@
-class Solution {
+define class Solution {
     public int[][] mergeArrays(int[][] nums1, int[][] nums2) {
         // Initialize pointers for both arrays
         int i = 0, j = 0;
