@@ -1,10 +1,56 @@
+class Solution {
+    public int maximumCount(int[] nums) {
+        int negCount = binarySearch(nums, 0);
+        int posCount = nums.length - binarySearch(nums, 1);
+        return Math.max(negCount, posCount);
+    }
+
+    private int binarySearch(int[] nums, int target) {
+        int left = 0, right = nums.length - 1, result = nums.length;
+        
+        while (left <= right) {
+            int mid = (left + right) / 2;
+            if (nums[mid] < target) {
+                left = mid + 1;
+            } else {
+                result = mid;
+                right = mid - 1;
+            }
+        }
+        
+        return result;
+    }
+}
+
 merged filedefine class Solution {
     public int[][] mergeArrays(int[][] nums1, int[][] nums2) {
         // Initialize pointers for both arrays
         int i = 0, j = 0;
         // List to store our merged results
         List<int[]> resultList = new ArrayList<>();
+        class Solution {
+    public int maximumCount(int[] nums) {
+        int negCount = binarySearch(nums, 0);
+        int posCount = nums.length - binarySearch(nums, 1);
+        return Math.max(negCount, posCount);
+    }
+
+    private int binarySearch(int[] nums, int target) {
+        int left = 0, right = nums.length - 1, result = nums.length;
         
+        while (left <= right) {
+            int mid = (left + right) / 2;
+            if (nums[mid] < target) {
+                left = mid + 1;
+            } else {
+                result = mid;
+                right = mid - 1;
+            }
+        }
+        
+        return result;
+    }
+}
         // Traverse both arrays with two pointers
         while (i < nums1.length && j < nums2.length) {
             int id1 = nums1[i][0], val1 = nums1[i][1];
