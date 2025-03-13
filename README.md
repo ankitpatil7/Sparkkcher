@@ -1,4 +1,4 @@
-class Solution {
+define class Solution {
     public int maximumCount(int[] nums) {
         int negCount = binarySearch(nums, 0);
         int posCount = nums.length - binarySearch(nums, 1);
