@@ -1,4 +1,4 @@
-class Solution {
+define from that  class Solution {
     public int minOperations(int[] nums) {
         int count = 0;
         int n = nums.length;
