@@ -1,4 +1,4 @@
-class Solution {
+define the string class Solution {
     public int minOperations(int[][] grid, int x) {
         List<Integer> values = new ArrayList<>();
         
