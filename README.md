@@ -8,7 +8,7 @@ class Solution {
         for (int x : nums2) {
             int idx = mpp.get(x);
             int left = orderOfKey(st, idx);
-            int right = (n - 1 - idx) - (st.size() - left);
+            int right = (n - 1 - idx) - (st.size() - left);v
             total += (long) left * right;
             int pos = Collections.binarySearch(st, idx);
             if (pos < 0) pos = -pos - 1;
