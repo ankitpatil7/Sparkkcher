@@ -1,4 +1,20 @@
 class Solution {
+    public long countSubarrays(int[] nums, int minK, int maxK) {
+        long total = 0;
+        int lastInvalid = -1, lastMin = -1, lastMax = -1;
+
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] < minK || nums[i] > maxK) lastInvalid = i;
+            if (nums[i] == minK) lastMin = i;
+            if (nums[i] == maxK) lastMax = i;
+
+            int validStart = Math.min(lastMin, lastMax);
+            total += Math.max(0, validStart - lastInvalid);
+        }
+
+        return total;
+    }
+}class Solution {
     public long countInterestingSubarrays(List<Integer> nums, int m, int k) {
         long total = 0;
         Map<Integer, Integer> map = new HashMap<>();
