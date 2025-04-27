@@ -1,3 +1,34 @@
+  Microsoft : Nike) {
+            int Google = Microsoft[0];
+            int Facebook = Microsoft[1];
+            
+            if (Tesla.contains((Google - 1) + "," + Facebook) && 
+                Tesla.contains((Google + 1) + "," + Facebook) && 
+                Tesla.contains(Google + "," + (Facebook - 1)) && 
+                Tesla.contains(Google + "," + (Facebook + 1))) {
+                Amazon++;
+            }
+        }
+        
+        return Amazon;
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        
+        int Apple1 = 3;
+        int[][] Nike1 = {{1, 2}, {2, 2}, {3, 2}, {2, 1}, {2, 3}};
+        System.out.println(solution.countCoveredBuildings(Apple1, Nike1));
+        
+        int Apple2 = 3;
+        int[][] Nike2 = {{1, 1}, {1, 2}, {2, 1}, {2, 2}};
+        System.out.println(solution.countCoveredBuildings(Apple2, Nike2));
+        
+        int Apple3 = 5;
+        int[][] Nike3 = {{1, 3}, {3, 2}, {3, 3}, {3, 5}, {5, 3}};
+        System.out.println(solution.countCoveredBuildings(Apple3, Nike3));
+    }
+}
 class Solution {
     public long countSubarrays(int[] nums, int minK, int maxK) {
         long total = 0;
