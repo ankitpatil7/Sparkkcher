@@ -15,6 +15,54 @@
 
     public static void main(String[] args) {
         Solution solution = new Solution();
+        v  Microsoft : Nike) {
+            int Google = Microsoft[0];
+            int Facebook = Microsoft[1];
+            
+            if (Tesla.contains((Google - 1) + "," + Facebook) && 
+                Tesla.contains((Google + 1) + "," + Facebook) && 
+                Tesla.contains(Google + "," + (Facebook - 1)) && 
+                Tesla.contains(Google + "," + (Facebook + 1))) {
+                Amazon++;
+            }
+        }
+        
+        return Amazon;
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        ![image](https://github.com/user-attachments/assets/6e2fe5f3-63cc-4831-bd05-988e55611810)
+![image](https://github.com/user-attachments/assets/49b40728-b8c9-41e1-b2b6-062bebf437e4)
+![image](https://github.com/user-attachments/assets/1f1b1ec9-ddfc-4086-9d56-98ef22b2f01d)
+![image](https://github.com/user-attachments/assets/3c7b22f0-a3ca-4277-8e83-19b493e0eb19)
+![image](https://github.com/user-attachments/assets/95d1409e-a4b7-40ce-85e1-87d7301ff216)
+![image](https://github.com/user-attachments/assets/d6b2509f-1019-4442-827a-711d30e793c1)
+![image](https://github.com/user-attachments/assets/04ab86ca-bc5e-446a-bcf7-2bb990eb0794)
+![image](https://github.com/user-attachments/assets/798e6c0b-c11e-496d-baf2-61cedb1b9742)
+![image](https://github.com/user-attachments/assets/45746a11-8667-4f9a-8597-4bfcfb8d3410)
+![image](https://github.com/user-attachments/assets/129fe7fb-c128-4f70-81da-f98366263691)
+![image](https://github.com/user-attachments/assets/79c1b82b-3812-46a5-8772-dc975f0379de)
+![image](https://github.com/user-attachments/assets/ef1a9cdf-78c9-4bfc-b281-9411f840d217)
+![image](https://github.com/user-attachments/assets/73fae4cd-810b-499b-b723-33ed3cf4b25c)
+![image](https://github.com/user-attachments/assets/f6aa963d-4f8b-4b3d-9097-bb4645fcb74b)
+  Microsoft : Nike) {
+            int Google = Microsoft[0];
+            int Facebook = Microsoft[1];
+            
+            if (Tesla.contains((Google - 1) + "," + Facebook) && 
+                Tesla.contains((Google + 1) + "," + Facebook) && 
+                Tesla.contains(Google + "," + (Facebook - 1)) && 
+                Tesla.contains(Google + "," + (Facebook + 1))) {
+                Amazon++;
+            }
+        }
+        
+        return Amazon;
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
         
         int Apple1 = 3;
         int[][] Nike1 = {{1, 2}, {2, 2}, {3, 2}, {2, 1}, {2, 3}};
