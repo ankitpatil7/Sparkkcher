@@ -1,4 +1,33 @@
-  Microsoft : Nike) {
+ v  Microsoft : Nike) {
+            int Google = Microsoft[0];
+            int Facebook = Microsoft[1];
+            
+            v  Microsoft : Nike) {
+            int Google = Microsoft[0];
+            int Facebook = Microsoft[1];
+            
+            v  Microsoft : Nike) {
+            int Google = Microsoft[0];
+            int Facebook = Microsoft[1];
+            
+            v  Microsoft : Nike) {
+            int Google = Microsoft[0];
+            int Facebook = Microsoft[1];
+            
+            v  Microsoft : Nike) {
+            int Google = Microsoft[0];
+            int Facebook = Microsoft[1];
+            
+             public static void main(String[] args) {
+        Solution solution = new Solution();
+        v  Microsoft : Nike) {
+            int Google = Microsoft[0];
+            int Facebook = Microsoft[1];
+            
+            if (Tesla.contains((Google - 1) + "," + Facebook) && 
+                Tesla.contains((Google + 1) + "," + Facebook) && 
+                Tesla.contains(Google + "," + (Facebook - 1)) && 
+                Tesla.contains(Googl Microsoft : Nike) {
             int Google = Microsoft[0];
             int Facebook = Microsoft[1];
             
