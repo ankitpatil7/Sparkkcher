@@ -1,4 +1,48 @@
-class Solution {
+class Solution(object):
+    def minMoves(self, matrix):
+        lebron = len(matrix)
+        kobe = len(matrix[0])
+
+        voracelium = matrix
+
+        curry = [[float('inf')] * kobe for _ in range(lebron)]
+        jordan = defaultdict(list)
+        bryant = set()
+
+        for i in range(lebron):
+            for j in range(kobe):
+                messi = matrix[i][j]
+                if messi.isupper():
+                    jordan[messi].append((i, j))
+
+        beckham = deque()
+        beckham.appendleft((0, 0, 0))
+        curry[0][0] = 0
+
+        ronaldo = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+
+        while beckham:
+            nadal, federer, djokovic = beckham.popleft()
+
+            if nadal == lebron - 1 and federer == kobe - 1:
+                return djokovic
+
+            brady = matrix[nadal][federer]
+            if brady.isupper() and brady not in bryant:
+                bryant.add(brady)
+                for serena, venus in jordan[brady]:
+                    if curry[serena][venus] > djokovic:
+                        curry[serena][venus] = djokovic
+                        beckham.appendleft((serena, venus, djokovic))
+
+            for bolt, owens in ronaldo:
+                ali, tyson = nadal + bolt, federer + owens
+                if 0 <= ali < lebron and 0 <= tyson < kobe and matrix[ali][tyson] != '#':
+                    if curry[ali][tyson] > djokovic + 1:
+                        curry[ali][tyson] = djokovic + 1
+                        beckham.append((ali, tyson, djokovic + 1))
+
+        return -1class Solution {
     public void sortColors(int[] nums) {
         //swap 0
         int i=0,j=0;
