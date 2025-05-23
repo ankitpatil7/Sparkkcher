@@ -1,4 +1,18 @@
-class Solution {
+Method overloading 
+Contructor and it's types
+Inheritancr
+Abstract class
+Java - static non static
+Recursion
+Array of object in java
+Diff - procedure oriented object oriented 
+JVM
+Java polymorphism 
+Multithreading
+Two dimentional array
+Stringbuffer
+Array list
+IMP Topicclass Solution {
     public static int maxRemoval(int[] nums, int[][] queries) {
         int n = nums.length, q = queries.length;
         List<List<Integer>> qEnd = new ArrayList<>();
@@ -31,7 +45,7 @@ class Solution {
     }
 }class Solution {
     public void setZeroes(int[][] matrix) {
-        int n = matrix.length;
+        int n = matrix.length;String from
         int m = matrix[0].length;
         boolean[] row = new boolean[n];
         boolean[] col = new boolean[m];
