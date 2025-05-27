@@ -1,4 +1,12 @@
 class Solution {
+    public int differenceOfSums(int n, int m) {
+        int largest_num_possible = n - n%m; //remove remainder from n to get the largest number smaller than equal to n and divisible by m
+        int nth_num = largest_num_possible / m; //find this so that we could easily find sum from A.P.
+        int divisible_sum = m*(nth_num)*(nth_num+1)/2; //all divisors sum 
+        int total_sum = n*(n+1)/2; // 1 to m total sum
+        return total_sum - 2*divisible_sum; //since total sum already includes sum of divisible number s we need to remove them too hence divisible_sum is multiplied by 2
+    }
+}class Solution {
     public int largestPathValue(String colors, int[][] edges) {
         int n = colors.length();
         int[] col = new int[n];
