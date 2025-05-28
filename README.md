@@ -1,3 +1,16 @@
+col = new int[n];
+        for (int i = 0; i < n; i++) col[i] = colors.charAt(i) - 'a';
+        int[] outdeg = new int[n];  // Build primitive adjacency
+        for (int[] e : edges) outdeg[e[0]]++;
+        int[][] adj = new int[n][];
+        for (int i = 0; i < n; i++) adj[i] = new int[outdeg[i]];
+        int[] ptr = new int[n];col = new int[n];
+        for (int i = 0; i < n; i++) col[i] = colors.charAt(i) - 'a';
+        int[] outdeg = new int[n];  // Build primitive adjacency
+        for (int[] e : edges) outdeg[e[0]]++;
+        int[][] adj = new int[n][];
+        for (int i = 0; i < n; i++) adj[i] = new int[outdeg[i]];
+        int[] ptr = new int[n]; 
 class Solution {
     public int differenceOfSums(int n, int m) {
         int largest_num_possible = n - n%m; //remove remainder from n to get the largest number smaller than equal to n and divisible by m
