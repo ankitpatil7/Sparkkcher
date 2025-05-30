@@ -5,7 +5,8 @@ class Solution {
         int n = edges1.length + 1;
         int m = edges2.length + 1;
 
-        List<List<Integer>> tree1 = buildGraph(edges1, n);
+        List<List<Integer>> tree1 = buildGraph(edges1, n);![image](https://github.com/user-attachments/assets/bcd898f6-7601-4fe3-abb9-31c081e1b983)
+
         List<List<Integer>> tree2 = buildGraph(edges2, m);
 
         int[] color1 = new int[2];
