@@ -13,7 +13,16 @@ class Solution {
                 minFreq[prevA & 1][prevB & 1] = Math.min(minFreq[prevA & 1][prevB & 1], prevA - prevB);
                 prevA = freq[a][l + 1];
                 prevB = freq[b][l + 1];
-                l++;
+   class Solution {
+    public int maxAdjacentDistance(int[] nums) {
+        int n = nums.length;
+        int maxa = Math.abs(nums[0] - nums[n - 1]);
+        for (int i = 0; i < n - 1; i++) {
+            maxa = Math.max(maxa, Math.abs(nums[i] - nums[i + 1]));
+        }
+        return maxa;
+    }
+}             l++;
             }
             cnt = Math.max(cnt, freqA - freqB - minFreq[1 - (freqA & 1)][freqB & 1]);
         }
