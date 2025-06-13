@@ -1,3 +1,4 @@
+![/user-attachments/assets/a31ac698-48d7-4d5a-9af8-dbcea7599f9b)
 class Solution {
     private static final int MOD = (int) 1e8;
     private int maxDfromAtoB(int a, int b, int k, int n, int[][] freq) {
