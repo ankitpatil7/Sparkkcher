@@ -1,4 +1,10 @@
-class Solution {
+ char replaceForMax = ' ';
+        for (char c : maxChars) {
+            if (c != '9') {
+                replaceForMax = c;
+                break;
+            }
+        }class Solution {
     public int minMaxDifference(int num) {
         String str = Integer.toString(num);
         char[] maxChars = str.toCharArray();
