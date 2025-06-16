@@ -1,3 +1,4 @@
+![Uploading image.png…]()
  char replaceForMax = ' ';
         for (char c : maxChars) {
             if (c != '9') {
