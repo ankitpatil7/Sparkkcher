@@ -1,4 +1,30 @@
-![Uploading image.png…]()
+
+ char replaceForMax = ' ';
+        for (char c : maxChars) {
+            if (c != '9') {
+                replaceForMax = c;
+                break;
+            }
+        }class Solution {
+    public int minMaxDifference(int num) {
+        String str = Integer.toString(num);
+        char[] maxChars = str.toCharArray();
+        char[] minChars = str.toCharArray();
+
+        // Step 1: Find first non-9 digit
+ char replaceForMax = ' ';
+        for (char c : maxChars) {
+            if (c != '9') {
+                replaceForMax = c;
+                break;
+            }
+        }class Solution {
+    public int minMaxDifference(int num) {
+        String str = Integer.toString(num);
+        char[] maxChars = str.toCharArray();
+        char[] minChars = str.toCharArray();
+
+        // Step 1: Find first non-9 digit
  char replaceForMax = ' ';
         for (char c : maxChars) {
             if (c != '9') {
