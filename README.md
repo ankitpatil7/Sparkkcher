@@ -1,4 +1,30 @@
- Palindrome(long num, boolean odd) {
+ minDel = Integer.MAX_VALUE;
+        for (int base = 0; base < 26; base++) {
+            if (freq[base] == 0)
+                continue;
+            int del = 0;
+            int baseFreq = freq[base];
+
+            for (int comp = 0; comp < 26; comp++) {
+                if (freq[comp] == 0)
+                    continue;
+                if (base == comp)
+                    continue;
+
+                int compFreq = freq[comp];
+                if (compFreq < baseFreq) {
+                    del += compFreq;
+                } else if (compFreq - baseFreq > k) {
+                    del += compFreq - baseFreq - k;
+                }
+            }
+
+            minDel = Math.min(minDel, del);
+        }
+
+        return minDel;
+    }
+}class Solution {Palindrome(long num, boolean odd) {
         long x = num;
         if (odd) x /= 10;
         while (x > 0) {
