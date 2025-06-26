@@ -1,3 +1,15 @@
+minDel = Integer.MAX_VALUE;
+        for (int base = 0; base < 26; base++) {
+            if (freq[base] == 0)
+                continue;
+            int del = 0;
+            int baseFreq = freq[base];
+
+            for (int comp = 0; comp < 26; comp++) {
+                if (freq[comp] == 0)
+                    continue;
+                if (base == comp)
+                    continue;
   minDel = Integer.MAX_VALUE;
         for (int base = 0; base < 26; base++) {
             if (freq[base] == 0)
