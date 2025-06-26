@@ -1,4 +1,16 @@
-  private long numProductNoGreaterThan(List<Integer> A, List<Integer> B, long m) {
+  minDel = Integer.MAX_VALUE;
+        for (int base = 0; base < 26; base++) {
+            if (freq[base] == 0)
+                continue;
+            int del = 0;
+            int baseFreq = freq[base];
+
+            for (int comp = 0; comp < 26; comp++) {
+                if (freq[comp] == 0)
+                    continue;
+                if (base == comp)
+                    continue;
+private long numProductNoGreaterThan(List<Integer> A, List<Integer> B, long m) {
         long count = 0;
         int j = B.size() - 1;
         for (int a : A) {
