@@ -3,6 +3,11 @@
                     length++;
                 }
             } else {
+                length++; < maxBits && sum + (1 << i) <= k) {
+                    sum += 1 << i;
+                    length++;
+                }
+            } else {
                 length++;cclass Solution {
     public int longestSubsequence(String s, int k) {
         int sum = 0;
