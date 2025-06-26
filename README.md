@@ -149,7 +149,22 @@ private long numProductNoGreaterThan(List<Integer> A, List<Integer> B, long m) {
         List<Integer> A2 = new ArrayList<>();
         List<Integer> B1 = new ArrayList<>();
         List<Integer> B2 = new ArrayList<>();
+VPalindrome(long num, int base) {
+        StringBuilder sb = new StringBuilder();
+        while (num > 0) {
+            sb.append((char) (num % base + '0'));
+            num /= base;
+        }
+        String s = sb.toString();
+        int i = 0, j = s.length() - 1;
+        while (i < j) if (s.charAt(i++) != s.charAt(j--)) return false;
+        return true;
+    }
 
+    public long kMirror(int k, int n) {
+        long sum = 0;
+        for (long len = 1; n > 0; len *= 10) {
+            for (l
         separate(nums1, A1, A2);
         separate(nums2, B1, B2);
 
