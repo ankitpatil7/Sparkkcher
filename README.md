@@ -1,4 +1,5 @@
  < maxBits && sum + (1 << i) <= k) {
+ < maxBits && sum + (1 << i) <= k) {
                     sum += 1 << i;
                     length++;
                 }
