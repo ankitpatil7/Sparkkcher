@@ -2,6 +2,16 @@
         long count = 0;
         int j = B.size() - 1;
         for (int a : A) {
+            while (j >= 0 && 1L * a * B.get(j) > m) {
+                j--;
+            }
+            count += j + 1;
+        }
+        return count;
+    }  private long numProductNoGreaterThan(List<Integer> A, List<Integer> B, long m) {
+        long count = 0;
+        int j = B.size() - 1;
+        for (int a : A) {
             while (j >= 0 && 1L * a * B.get(j) > m) {  private long numProductNoGreaterThan(List<Integer> A, List<Integer> B, long m) {
         long count = 0;
         int j = B.size() - 1;
