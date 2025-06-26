@@ -1,4 +1,19 @@
-minDel = Integer.MAX_VALUE;
+Palindrome(long num, int base) {
+        StringBuilder sb = new StringBuilder();
+        while (num > 0) {
+            sb.append((char) (num % base + '0'));
+            num /= base;
+        }
+        String s = sb.toString();
+        int i = 0, j = s.length() - 1;
+        while (i < j) if (s.charAt(i++) != s.charAt(j--)) return false;
+        return true;
+    }
+
+    public long kMirror(int k, int n) {
+        long sum = 0;
+        for (long len = 1; n > 0; len *= 10) {
+            for (lminDel = Integer.MAX_VALUE;
         for (int base = 0; base < 26; base++) {
             if (freq[base] == 0)
                 continue;
@@ -66,7 +81,22 @@ private long numProductNoGreaterThan(List<Integer> A, List<Integer> B, long m) {
             count += j + 1;
         }
         return count;
+    }Palindrome(long num, int base) {
+        StringBuilder sb = new StringBuilder();
+        while (num > 0) {
+            sb.append((char) (num % base + '0'));
+            num /= base;
+        }
+        String s = sb.toString();
+        int i = 0, j = s.length() - 1;
+        while (i < j) if (s.charAt(i++) != s.charAt(j--)) return false;
+        return true;
     }
+
+    public long kMirror(int k, int n) {
+        long sum = 0;
+        for (long len = 1; n > 0; len *= 10) {
+            for (l
                 j--;
             }
             count += j + 1;
