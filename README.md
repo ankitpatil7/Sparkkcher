@@ -1,4 +1,4 @@
-Palindrome(long num, int base) {
+Palindrome(long num, int base) { StringBuilder sb = new StringBuilder(); while (num > 0) { sb.append((char) (num % base + '0')); num /= base; } String s = sb.toString(); int i = 0, j = s.length() - 1; while (i < j) if (s.charAt(i++) != s.charAt(j--)) return false; return true; }Palindrome(long num, int base) {
         StringBuilder sb = new StringBuilder();
         while (num > 0) {
             sb.append((char) (num % base + '0'));
