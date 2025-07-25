@@ -1,4 +1,8 @@
-class Solution 
+ PriorityQueue<long[]> busy = new PriorityQueue<>(
+            (a, b) -> a[0] != b[0] ? Long.compare(a[0], b[0])
+                                   : Long.compare(a[1], b[1]) PriorityQueue<long[]> busy = new PriorityQueue<>(
+            (a, b) -> a[0] != b[0] ? Long.compare(a[0], b[0])
+                                   : Long.compare(a[1], b[1])class Solution 
 {
     public int mostBooked(int n, int[][] meetings) 
     {
