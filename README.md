@@ -1,3 +1,448 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Ankit patiL} \\ \vspace{1pt}
+     \\ \vspace{6pt}
+    \normalsize \href{tel:#}{ \raisebox{-0.1\height}\faPhone\ \underline{+91-7821950175} ~} \href{mailto:ankitgpatil.official@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{Email}} ~ 
+    \href{https://www.linkedin.com/in/its-ankit-patil}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{Linkedin}}  ~
+    \href{https://github.com/aman-spp}{\raisebox{-0.2\height}\faGithub\ \underline{GitHub}} ~
+    \href{https://leetcode.com/AnkitOnTop/}{\raisebox{-0.2\height}{\includegraphics[height=0.3cm, width=0.3cm]{leetcode.png}}\ \underline{LeetCode}} ~
+    \vspace{-8pt}
+    \href{https://codeforces.com}{\raisebox{-0.2\height}{\includegraphics[height=0.3cm, width=0.3cm]{codeforces.jpg}}\ \underline{Codeforces}} ~
+    \vspace{-8pt}
+   
+\end{center}
+ \vspace{.5mm}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {R. C. Patel Institute of Technology}{2024 – 2028}
+      {B.Tech - Information Technology  \textbf{}  {}}{Shirpur , India}
+  \resumeSubHeadingListEnd
+  
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {College Name}{MM YYYY -- MM YYYY}
+%       {Exam Name - Course Name  - \textbf{Percentage} - \textbf{xx\%}}{city, country}
+%   \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+% \section{COURSEWORK / SKILLS}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-2pt, parsep=5pt]
+%                 \item DSA
+%                 \item Operating Systems
+%                 \item Oops Concepts
+%                 \item Computer Networks
+%                 % \item System Design
+%                 \item Cloud Computing
+%                 \item Software Engineering
+%                 \item DBMS
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {  STEMSAGE TechWorld LLP {\raisebox{-0.1\height}\faExternalLink }}{NOV 2024 - FEB 2025} 
+      {\underline{Work- Intern}}{Shirpur , India}
+      \resumeItemListStart
+        \resumeItem{\normalsize{STEMSAGE kaam here}}}
+        \resumeItem{\normalsize{KAY AJUN KEL TE}}
+        \resumeItem{\normalsize{WORKSHOP Ex JE ASEL}}}
+       
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+\vspace{-9.5pt}
+
+
+
+
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+      {   OpenSource- GSSOC'25 , OSCI'25 \href{https://drive.google.com/}{\raisebox{-0.1\height}\faExternalLink }}{JULY 2025 - PRESENT} 
+      {\underline{Intern Summer Of Code-Contributer}}{REMOTE}
+      \resumeItemListStart
+        
+        \resumeItem{\normalsize{GITHUB VERSION CONTROL, search functionality, and a voting system for ranking answers.}}
+        \resumeItem{\normalsize{Handle the Database and created a responsive front-end using \textbf{HTML, CSS and JavaScript.}}}
+        
+  
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+\vspace{-9.5pt}
+
+
+\resumeSubHeadingListStart
+\resumeSubheading
+      {   WordPress JetPack \href{https://ankitgpatil.wordpress.com/}{\raisebox{-0.1\height}\faExternalLink }}{Oct 2020 - 2022} 
+      {\underline{Website}}{REMOTE}
+      \resumeItemListStart
+        
+        \resumeItem{\normalsize{making web from ease and 2k views.}}
+        \resumeItem{\normalsize{ jetrpack on work and created a responsive front-end using \textbf{HTML, CSS and JavaScript.}}}
+        
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+\vspace{-8.5pt}
+
+
+
+
+
+\section{ACHIVMENTS}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Rotary Innovision \href{Certificate Proof link}{\raisebox{-0.1\height}\faExternalLink } }{05-2021 -- 12-2021}{\underline{First}}{PUNE}
+
+            \resumeItemListStartGITHUB VERSION CONTROL, search functionality, and a voting system for ranking answers.ALSO}}
+                \resumeItem{\normalsize{NSS Member from 2019 to 2GITHUB VERSION CONTROL, search functionality, and a  }}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+ \vspace{-13pt}
+
+
+\resumeSubHeadingListStart
+        \resumeSubheading{ADVITYA First karnatk \href{Certificate Proof link}{\raisebox{-0.1\height}\faExternalLink } }{05-2021 -- 12-2021}{\underline{First}}{Karnatak}
+        
+            \resumeItemListStart
+                \resumeItem{\normalsize{Get funding fame aGITHUB VERSION CONTROL, search functionality, and a voting}}
+                \resumeItem{\normalsize{NSS Member from 2019 to GITHUB VERSION CONTROL, search functionality,  }}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+ \vspace{-13pt}
+
+ 
+ 
+ \resumeSubHeadingListStart
+        \resumeSubheading{NMIMS Finallist UAAN WINNER \href{Certificate Proof link}{\raisebox{-0.1\height}\faExternalLink } }{05-2021 -- 12-2021}{\underline{First}}{PUNE}
+        
+            \resumeItemListStart
+                \resumeItem{\normalsize{Get funding fame allGITHUB VERSION CONTROL, search functionality}}
+                \resumeItem{\normalsize{NSS Member from 2019 to 202GITHUB VERSION CONTROL, search functionality, and a voting }}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+ \vspace{-11pt}
+
+ 
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Languages:}}{  \normalsize{Python, C++, JavaScript, VBScript, SQL}} \\
+     \textbf{\normalsize{Technologies/Frameworks:}}{  \normalsize{HTML5, CSS3, React, MongoDB, Express, Javascript, Bootstrap}} \\
+     \textbf{\normalsize{Developer Tools:}}{  \normalsize{Brity RPA Designer, Brity RPA Orchestrator, VS Code, PyCharm, IntelliJ, Canva }} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+
+% %-----------INVOLVEMENT---------------
+\section{CODING PLATFORMS}
+      \resumeSubHeadingListStart
+              \resumeItemListStart
+                  \resumeItem{\normalsize{Solved \textbf{1200+} Problems on \textbf{Leetcode}.
+                  \href{https://leetcode.com/aman_2_0_2_3/}{\raisebox{-0.1\height}\faExternalLink }}}
+                \resumeItem{\normalsize{Solved \textbf{500+} Problems across \textbf{GeeksforGeeks} and \textbf{InterviewBit}.
+                  \href{https://auth.geeksforgeeks.org/user/aman_2_0_2_3/practice}{\raisebox{-0.1\height}\faExternalLink }}}
+                 \resumeItem{\normalsize{150=fdays oncarggoPupil on Codeforces Max Rating \textbf{1348} 
+                 \href{https://codeforces.com/profile/alwaysAnewbie}{\raisebox{-0.1\height}\faExternalLink }}}
+                 % \resumeItem{\normalsize{Participation Certificate. \href{ParticipationCertificateLink.com}{\raisebox{-0.1\height}\faExternalLink }}}
+              \resumeItemListEnd
+     \resumeSubHeadingListEnd
+  \vspace{-11pt}
+ 
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+     \resumeProjectHeading
+          {\href{#}{\textbf{\large{\underline{File Handling Using Brity RPA}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Brity RPA Designer, JavaScript, Excel}}}{Jan 2025}\\
+          \resumeItemListStart
+            \resumeItem {\normalsize{Developed an RPA solution to extract all files from a specified folder in the local machine and log the file extensions into an Excel sheet using a For Each loop.}}
+            \resumeItem{\normalsize{This automation made inventory tracking easier by categorizing files based on their extensions.}}
+           
+          \resumeItemListEnd 
+          \vspace{-13pt}
+    
+        
+          
+      \resumeProjectHeading
+          {\href{https://github.com/FusionIIIT/Fusion/tree/main/FusionIIIT/applications/counselling_cell}{\textbf{\large{\underline{Counselling Cell - \textbf{Fusion IIIT}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{HTML, CSS, React, PostgreSQL}}}{2022-2023}\\
+          \resumeItemListStart
+             \resumeItem{\normalsize{Develop the \textbf{front-end} of Counselling Cell module in Fusion IIIT.}}
+            \resumeItem{\normalsize{Module Consists of 4-5 different types of users with different functionalities.}}
+            \resumeItem{\normalsize{Added \textbf{10-12 new features} like organize the user interface of the Module's \textbf{Home Page}}}
+            \resumeItem{\normalsize{Handle the database and integrated the module with other existing modules.}}
+          \resumeItemListEnd
+          \vspace{-7pt}
+          
+        % \resumeProjectHeading
+        %   {\href{https://github.com/FusionIIIT/Fusion/tree/main/FusionIIIT/applications/counselling_cell}{\textbf{\large{\underline{Counselling Cell - \textbf{Fusion IIIT}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{HTML, CSS, Django, PostgreSQL}}}{2021-22}
+        %   \resumeItemListStart
+        %      \resumeItem{\normalsize{Develop the \textbf{front-end} of Counselling Cell module in Fusion IIIT.}}
+        %     \resumeItem{\normalsize{Module Consists of 4-5 different types of users with different functionalities.}}
+        %     \resumeItem{\normalsize{Added \textbf{10-12 new features} like organize the user interface of the Module's \textbf{Home Page}}}
+        %     \resumeItem{\normalsize{Handle the database and integrated the module with other existing modules.}}
+        %   \resumeItemListEnd
+        % \vspace{-13pt}
+          
+    \resumeSubHeadingListEnd
+% \vspace{-12pt}
+
+%
+
+
+%-----------EXPERIENCE-----------
+% \section{INTERNSHIP}
+%   \resumeSubHeadingListStart
+
+%     \resumeSubheading
+%       {Company Name \href{certificate Link}{\raisebox{-0.1\height}\faExternalLink }}{MM YYYY -- MM YYYY} 
+%       {\underline{Role Name}}{city, country}
+%       \resumeItemListStart
+%         \resumeItem{\normalsize{About the role \textbf{and responsibilities carried out.}}}
+  
+%       \resumeItemListEnd  
+%   \resumeSubHeadingListEnd
+% \vspace{-12pt}
+
+% %-----------INVOLVEMENT---------------
+% \section{CODING PLATFORMS}
+%     \resumeSubHeadingListStart
+%             \resumeItemListStart
+%                 \resumeItem{\normalsize{Solved \textbf{1200+} Problems on \textbf{Leetcode}.
+%                 \href{https://leetcode.com/aman_2_0_2_3/}{\raisebox{-0.1\height}\faExternalLink }}}
+%                 \resumeItem{\normalsize{Solved \textbf{500+} Problems across \textbf{GeeksforGeeks} and \textbf{InterviewBit}.
+%                 \href{https://auth.geeksforgeeks.org/user/aman_2_0_2_3/practice}{\raisebox{-0.1\height}\faExternalLink }}}
+%                 \resumeItem{\normalsize{Pupil on Codeforces Max Rating \textbf{1348} 
+%                 \href{https://codeforces.com/profile/alwaysAnewbie}{\raisebox{-0.1\height}\faExternalLink }}}
+%                 % \resumeItem{\normalsize{Participation Certificate. \href{ParticipationCertificateLink.com}{\raisebox{-0.1\height}\faExternalLink }}}
+%             \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+%  \vspace{-11pt}
+ 
+  %-----------CERTIFICATIONS---------------
+\section{CERTIFICATIONS}
+
+$\sbullet[.75] \hspace{0.1cm}$ {\href{https://www.udemy.com/certificate/UC-c0e8dc21-8e8b-4f6e-9d05-5d109a9523cd/}{Mastering Data Structure and Algorithms - Udemy}} \hspace{2.59cm}\\
+$\sbullet[.75] \hspace{0.1cm}$ {\href{https://www.udemy.com/certificate/UC-b732c216-80d9-448c-b5fd-42b4aa7ca0ee/}{C++ - Udemy}} \hspace{1.6cm}\\
+$\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{Graph data structure for CP - Udemy}} \hspace{1cm}\\
+
+
+
+
+ \section{EXTRACURRICULAR}
+    \resumeSubHeadingListStart
+        %\resumeSubheading{Organization Name \href{Certificate Proof link}{\raisebox{-0.1\height}\faExternalLink } }{05-2021 -- 12-2021}{\underline{Role}}{Location}
+        
+            \resumeItemListStart
+                \resumeItem{\normalsize{Taught basic C++/DSA in offline Mode.          05-2021 -- 12-2021}}
+                \resumeItem{\normalsize{NSS Member from 2019 to 2022 }}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+ \vspace{-11pt}
+ 
+ \end{document}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class Solution 
 {
     public int countHillValley(int[] nums) 
