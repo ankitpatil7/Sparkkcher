@@ -943,7 +943,7 @@ class Solution
         int count = 0;
         for (int i = 1; i < filtered.size() - 1; i++) 
         {
-            int prev = filtered.get(i - 1);
+            int prev = filtered. bmget(i - 1);
             int curr = filtered.get(i);
             int next = filtered.get(i + 1);
 
